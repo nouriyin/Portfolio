@@ -41,6 +41,7 @@ section {
     justify-content: space-between;
     width: 100%;
     column-gap: 30px;
+    margin-bottom: 20px;
 }
 
 .section-heading {
@@ -48,18 +49,39 @@ section {
     font-weight: bold;
     text-align: right;
     width: 200px;
+    margin-top: 0;
 }
 
 .section-content {
     border-left: 1px solid;
-    width: calc(100% - 200px);
+    width: calc(100% - 234px);
 }
 
-#about-me img{
-    
+#about-me p {
+    padding-left: 10px;
 }
 
 #work {
     display: flex;
     column-gap: 5px;
+}
+
+#work .img-container:first-child {
+    width: 100%;
+    overflow: hidden;
+    height: 500px;
+}
+
+#work .img-container:not(:first-child) {
+    width: calc(50% - 2px);
+    display: inline-block;
+}
+
+#work img {
+    width: 100%;
+   
+}
+
+#contact-info a {
+    padding: 0 5px;
 }
